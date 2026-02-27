@@ -1,4 +1,4 @@
-# Notion UI Capture Integration (PoC)
+# Notion API テスト
 
 Webアプリケーション上の独自にスタイリングされたUI要素（DOM）を画像化し、そのままNotionのページへ自動保存する検証用プロジェクトです。
 
@@ -12,7 +12,7 @@ Webアプリケーション上の独自にスタイリングされたUI要素（
 
 ---
 
-## 🚀 セットアップ手順
+## セットアップ手順
 
 このプロジェクトは `frontend` と `backend` のモノレポ構成になっています。それぞれでセットアップが必要です。
 
@@ -81,8 +81,9 @@ Webアプリケーション上の独自にスタイリングされたUI要素（
    ```bash
    ngrok http 8000
 
-   起動後、画面に表示される Forwarding のURL（https://...）をコピーし、backend/.env の BASE_PUBLIC_URL に貼り付けて上書き保存してください。
    ```
+
+   起動後、画面に表示される Forwarding のURL（https://...）をコピーし、backend/.env の BASE_PUBLIC_URL に貼り付けて上書き保存してください。
 
 2. バックエンドの起動
    ```bash
@@ -94,9 +95,9 @@ Webアプリケーション上の独自にスタイリングされたUI要素（
    ```bash
    cd frontend
    npm run dev
+   ```
 
    起動後、ブラウザで http://localhost:5173 にアクセスし、「Notionへ送る」ボタンをクリックすると、UIがキャプチャされて指定したNotionページに画像として追加されます。
-   ```
 
 ---
 
